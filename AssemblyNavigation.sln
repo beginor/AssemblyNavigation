@@ -5,6 +5,40 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2BA3BB30-9AE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyNavigation", "src\AssemblyNavigation\AssemblyNavigation.csproj", "{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C0A025C9-FED7-401D-90BA-EC130B15A6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "test\MainApp\MainApp.csproj", "{BCAF172F-8373-42AC-B52B-BB4099EAB3D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9476D6CB-51ED-4A08-9C6D-4E99D573BF47}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TestWebsite", "test\TestWebsite\", "{349BC3D1-72AD-450D-9C37-A5A901321449}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/TestWebsite"
+		Debug.AspNetCompiler.PhysicalPath = "test\TestWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TestWebsite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TestWebsite"
+		Release.AspNetCompiler.PhysicalPath = "test\TestWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TestWebsite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55209"
+		DefaultWebSiteLanguage = "Visual C#"
+		ProjOutputReferences = ""
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridModule", "test\Modules\GridModule\GridModule.csproj", "{A4A39435-D6D3-447A-B126-4B6249208549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapModule", "test\Modules\MapModule\MapModule.csproj", "{684A8B23-236A-46FD-8973-E2D5AFC6E408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartModule", "test\Modules\ChartModule\ChartModule.csproj", "{91894249-832F-42D9-9A43-AE17DE7A907C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +49,37 @@ Global
 		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAF172F-8373-42AC-B52B-BB4099EAB3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAF172F-8373-42AC-B52B-BB4099EAB3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAF172F-8373-42AC-B52B-BB4099EAB3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAF172F-8373-42AC-B52B-BB4099EAB3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349BC3D1-72AD-450D-9C37-A5A901321449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349BC3D1-72AD-450D-9C37-A5A901321449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349BC3D1-72AD-450D-9C37-A5A901321449}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{349BC3D1-72AD-450D-9C37-A5A901321449}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A4A39435-D6D3-447A-B126-4B6249208549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A39435-D6D3-447A-B126-4B6249208549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A39435-D6D3-447A-B126-4B6249208549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A39435-D6D3-447A-B126-4B6249208549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{684A8B23-236A-46FD-8973-E2D5AFC6E408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684A8B23-236A-46FD-8973-E2D5AFC6E408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684A8B23-236A-46FD-8973-E2D5AFC6E408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684A8B23-236A-46FD-8973-E2D5AFC6E408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91894249-832F-42D9-9A43-AE17DE7A907C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91894249-832F-42D9-9A43-AE17DE7A907C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91894249-832F-42D9-9A43-AE17DE7A907C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91894249-832F-42D9-9A43-AE17DE7A907C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB} = {2BA3BB30-9AE4-4531-9328-68B850311147}
+		{BCAF172F-8373-42AC-B52B-BB4099EAB3D7} = {C0A025C9-FED7-401D-90BA-EC130B15A6B5}
+		{9476D6CB-51ED-4A08-9C6D-4E99D573BF47} = {C0A025C9-FED7-401D-90BA-EC130B15A6B5}
+		{349BC3D1-72AD-450D-9C37-A5A901321449} = {C0A025C9-FED7-401D-90BA-EC130B15A6B5}
+		{A4A39435-D6D3-447A-B126-4B6249208549} = {9476D6CB-51ED-4A08-9C6D-4E99D573BF47}
+		{684A8B23-236A-46FD-8973-E2D5AFC6E408} = {9476D6CB-51ED-4A08-9C6D-4E99D573BF47}
+		{91894249-832F-42D9-9A43-AE17DE7A907C} = {9476D6CB-51ED-4A08-9C6D-4E99D573BF47}
 	EndGlobalSection
 EndGlobal

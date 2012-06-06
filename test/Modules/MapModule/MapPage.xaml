@@ -1,0 +1,19 @@
+﻿<sdk:Page
+	x:Class="MapModule.MapPage" 
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+	d:DesignWidth="640" d:DesignHeight="480"
+	Title="MapPage Page"
+	>
+	<Grid x:Name="LayoutRoot">
+		<esri:Map WrapAround="True" x:Name="MyMap">
+			<esri:ArcGISTiledMapServiceLayer ID="MyLayer" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" />
+		</esri:Map>
+
+	</Grid>
+</sdk:Page>

@@ -36,9 +36,24 @@
 
 ### 模块
 
-每个模块至少要有一个页面， 这个页面需要继承自 [Page](http://msdn.microsoft.com/en-us/library/system.windows.controls.page(v=vs.95).aspx) 类
+每个模块需要添加对 System.Windows.Controls.Navigation 的引用， 至少要有一个页面（否则就不是模块了）， 这个
+页面需要继承自 System.Windows.Controls.Page 类。
 
 ### 导航链接地址格式
 
+导航地址的链接地址格式为要显示的模块的完整的类型名称， 例如：
+
+    <pre>
+    &lt;StackPanel Orientation="Horizontal">
+       &lt;HyperlinkButton Content="Welcome Page" NavigateUri="MainApp.WelcomePage,MainApp"/>
+       &lt;HyperlinkButton Content="Chart Page" NavigateUri="ChartModule.ChartPage,ChartModule"/>
+       &lt;HyperlinkButton Content="Map Page" NavigateUri="MapModule.MapPage,MapModule"/>
+       &lt;HyperlinkButton Content="Grid Page" NavigateUri="GridModule.GridPage,GridModule"/>
+    &lt;/StackPanel>
+    </pre>
+
+如果这份文档还不够清楚， 可以从 GitHub 网站项目下载这个[项目](https://github.com/beginor/AssemblyNavigation)， 有一个完整的测试程序。
+
 ## 注意问题
 
+* 

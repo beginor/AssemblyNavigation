@@ -19,20 +19,20 @@
 1. 添加对 AssemblyNavigation、 System.Windows.Controls.Navigation 的引用至项目；
 2. 在主页面的 xaml 代码添加下面的 xmlns 引用：
 
-   <pre>
-   xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
-   xmlns:asmNav="clr-namespace:Beginor.AssemblyNavigation;assembly=Beginor.AssemblyNavigation"
-   </pre>
+    <code>
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:asmNav="clr-namespace:Beginor.AssemblyNavigation;assembly=Beginor.AssemblyNavigation"
+    </code>
 
 3. 添加 Frame 控件并设置 ContentLoader， 代码如下：
 
-   <pre>
-   <sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">  
-      <sdk:Frame.ContentLoader>  
-         <asmNav:AssemblyNavigationContentLoader />  
-      </sdk:Frame.ContentLoader>  
-   </sdk:Frame>
-   <pre>
+    <code>
+    &lt;sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">  
+       &lt;sdk:Frame.ContentLoader>  
+          &lt;asmNav:AssemblyNavigationContentLoader />  
+       &lt;/sdk:Frame.ContentLoader>  
+    &lt;/sdk:Frame>
+	 </code>
 
 ### 模块
 

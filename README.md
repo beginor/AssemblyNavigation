@@ -43,14 +43,14 @@
 
 导航地址的链接地址格式为要显示的模块的完整的类型名称， 例如：
 
-    <pre>
+    <code>
     &lt;StackPanel Orientation="Horizontal">
     &lt;HyperlinkButton Content="Welcome Page" NavigateUri="MainApp.WelcomePage,MainApp"/>
     &lt;HyperlinkButton Content="Chart Page" NavigateUri="ChartModule.ChartPage,ChartModule"/>
     &lt;HyperlinkButton Content="Map Page" NavigateUri="MapModule.MapPage,MapModule"/>
     &lt;HyperlinkButton Content="Grid Page" NavigateUri="GridModule.GridPage,GridModule"/>
     &lt;/StackPanel>
-    </pre>
+    </code>
 
 如果这份文档还不够清楚， 可以从 GitHub 网站项目下载这个[项目](https://github.com/beginor/AssemblyNavigation)， 有一个完整的测试程序。
 

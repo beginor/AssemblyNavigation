@@ -36,6 +36,8 @@
 
 ### 模块
 
+每个模块至少要有一个页面， 这个页面需要继承自 [Page](http://msdn.microsoft.com/en-us/library/system.windows.controls.page(v=vs.95).aspx) 类
+
 ### 导航链接地址格式
 
 ## 注意问题

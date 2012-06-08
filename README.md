@@ -27,11 +27,11 @@
 3. 添加 Frame 控件并设置 ContentLoader， 代码如下：
 
    <pre>
-   &lt;sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">  
-      &lt;sdk:Frame.ContentLoader>  
-         &lt;asmNav:AssemblyNavigationContentLoader />  
-      &lt;/sdk:Frame.ContentLoader>  
-   &lt;/sdk:Frame>
+   <sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">  
+      <sdk:Frame.ContentLoader>  
+         <asmNav:AssemblyNavigationContentLoader />  
+      </sdk:Frame.ContentLoader>  
+   </sdk:Frame>
    <pre>
 
 ### 模块

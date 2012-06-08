@@ -45,10 +45,10 @@
 
     <pre>
     &lt;StackPanel Orientation="Horizontal">
-       &lt;HyperlinkButton Content="Welcome Page" NavigateUri="MainApp.WelcomePage,MainApp"/>
-       &lt;HyperlinkButton Content="Chart Page" NavigateUri="ChartModule.ChartPage,ChartModule"/>
-       &lt;HyperlinkButton Content="Map Page" NavigateUri="MapModule.MapPage,MapModule"/>
-       &lt;HyperlinkButton Content="Grid Page" NavigateUri="GridModule.GridPage,GridModule"/>
+    &lt;HyperlinkButton Content="Welcome Page" NavigateUri="MainApp.WelcomePage,MainApp"/>
+    &lt;HyperlinkButton Content="Chart Page" NavigateUri="ChartModule.ChartPage,ChartModule"/>
+    &lt;HyperlinkButton Content="Map Page" NavigateUri="MapModule.MapPage,MapModule"/>
+    &lt;HyperlinkButton Content="Grid Page" NavigateUri="GridModule.GridPage,GridModule"/>
     &lt;/StackPanel>
     </pre>
 

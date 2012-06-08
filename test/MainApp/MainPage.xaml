@@ -26,12 +26,13 @@
 		</Grid.RowDefinitions>
 		
 		<StackPanel Orientation="Horizontal">
+			<HyperlinkButton Content="Welcome Page" NavigateUri="MainApp.WelcomePage,MainApp"/>
 			<HyperlinkButton Content="Chart Page" NavigateUri="ChartModule.ChartPage,ChartModule"/>
 			<HyperlinkButton Content="Map Page" NavigateUri="MapModule.MapPage,MapModule"/>
 			<HyperlinkButton Content="Grid Page" NavigateUri="GridModule.GridPage,GridModule"/>
 		</StackPanel>
 		
-		<sdk:Frame Name="MainFrame" Grid.Row="1">
+		<sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">
 			<sdk:Frame.ContentLoader>
 				<asmNav:AssemblyNavigationContentLoader />
 			</sdk:Frame.ContentLoader>

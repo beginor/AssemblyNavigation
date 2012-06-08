@@ -4,11 +4,29 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	mc:Ignorable="d"
 	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	xmlns:local="clr-namespace:GridModule;assembly=GridModule"
+	mc:Ignorable="d"
 	d:DesignWidth="640" d:DesignHeight="480"
 	Title="GridPage Page"
 	>
+	
+	<sdk:Page.Resources>
+		<local:CategoryCollection x:Key="Categories">
+			<local:Category CategoryId="1" CategoryName="Beverages" Description="Soft drinks, coffees, teas, be" />
+			<local:Category CategoryId="2" CategoryName="Condiments" Description="Sweet and savory sauces, relis" />
+			<local:Category CategoryId="3" CategoryName="Confections" Description="Desserts, candies, and sweet b" />
+			<local:Category CategoryId="4" CategoryName="Dairy Products" Description="Cheeses" />
+			<local:Category CategoryId="5" CategoryName="Grains/Cereals" Description="Breads, crackers, pasta, and c" />
+			<local:Category CategoryId="6" CategoryName="Meat/Poultry" Description="Prepared meats" />
+			<local:Category CategoryId="7" CategoryName="Produce" Description="Dried fruit and bean curd" />
+			<local:Category CategoryId="8" CategoryName="Seafood" Description="Seaweed and fish" />
+		</local:CategoryCollection>
+	</sdk:Page.Resources>
+	
 	<Grid x:Name="LayoutRoot">
+		<sdk:DataGrid x:Name="DataGrid" ItemsSource="{StaticResource Categories}">
+			
+		</sdk:DataGrid>
 	</Grid>
 </sdk:Page>

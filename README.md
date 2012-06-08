@@ -32,7 +32,7 @@
           &lt;asmNav:AssemblyNavigationContentLoader />
        &lt;/sdk:Frame.ContentLoader>
     &lt;/sdk:Frame>
-	 </pre>
+    </pre>
 
 ### 模块
 

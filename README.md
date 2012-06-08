@@ -10,7 +10,29 @@
 
 ### 几乎零配置
 
-使用这个导航框架几乎不需要在客户端做任何配置， 整个加载过程是自动完成的， 你需要写的只是导航的菜单项。
+使用这个导航框架几乎不需要在客户端或服务端做任何配置， 整个加载过程是自动完成的， 你需要写的只是导航的菜单项。
 
 ## 使用方法
+
+### 主程序
+
+1. 添加对 AssemblyNavigation、 System.Windows.Controls.Navigation 的引用至项目；
+2. 在主页面的 xaml 代码添加下面的 xmlns 引用：
+
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:asmNav="clr-namespace:Beginor.AssemblyNavigation;assembly=Beginor.AssemblyNavigation"
+
+3. 添加 Frame 控件并设置 ContentLoader， 代码如下：
+
+    <sdk:Frame Name="MainFrame" Grid.Row="1" Source="MainApp.WelcomePage,MainApp">
+       <sdk:Frame.ContentLoader>
+          <asmNav:AssemblyNavigationContentLoader />
+       </sdk:Frame.ContentLoader>
+    </sdk:Frame>
+
+### 模块
+
+### 导航链接地址格式
+
+## 注意问题
 
